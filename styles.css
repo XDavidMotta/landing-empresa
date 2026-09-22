@@ -1,3 +1,67 @@
 :root {
-   background-color: rgb(29, 29, 29); 
+   --color-letra: #8a8680;
+   --Naranja: #E8622A;
+   --Texto-botones: #FFFFFF;
+   --Bordes: #535251;
+   --Titulo: #F0EDE8;
+   --Espaciado: 20px;
+   --Fondo: #111111;
+   --Fuente-Titulos: 'Barlow Condensed', sans-serif;
+   --Fuente-Texto: 'Inter', sans-serif;
 }
+
+body {
+   background-color: var(--Fondo);
+   font-family: var(--Fuente-Texto);
+}
+
+nav {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   font-family: var(--Fuente-Titulos);
+   text-transform: uppercase;
+}
+
+a:link {
+   text-decoration: none;
+}
+
+.Logo-texto {
+   display:flex;
+   align-items: center;
+   gap: var(--Espaciado);
+}
+
+.Nav {
+   display:flex;
+   align-items: center;
+   gap: var(--Espaciado);
+}
+
+.Nav a {
+   color: var(--color-letra);
+}
+
+.Logo-texto a {
+   color: var(--Texto-botones);
+}
+
+.CambioLetra-Logo {
+   color: var(--Naranja);
+}
+
+.Nav .boton-presupuesto {
+   color: var(--Texto-botones); 
+   background-color: var(--Naranja);
+   padding: 10px 20px;
+}
+
+h1 {
+   color: var(--Titulo);
+}
+
+h2 {
+   color: var(--Titulo);
+}
+
