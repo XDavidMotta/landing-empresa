@@ -138,20 +138,6 @@ h2 {
    max-width: 600px;
 }
 
-@media (max-width: 768px) {
-   h1 {
-      font-size: var(--Size-H1-Movil);
-   }
-
-   #Hero {
-      padding: 60px 20px;
-   }
-
-   .CifrasDeConfianza {
-      gap: 10px;
-   }
-}
-
 .TablaServicios {
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
@@ -172,4 +158,34 @@ h2 {
 .TextoDerecha {
    justify-content: space-between;
    display: flex;
+}
+
+@media (max-width: 768px) {
+   h1 {
+      font-size: var(--Size-H1-Movil);
+   }
+
+   h2 {
+      font-size: var(--Size-H2-Movil);
+   }
+
+   #Hero, #Servicios {
+      padding: 60px 20px;
+   }
+
+   .CifrasDeConfianza {
+      gap: 10px;
+   }
+
+   .TextoDerecha {
+      flex-direction: column;
+   }
+
+   .TablaServicios {
+      grid-template-columns: 1fr;
+   }
+
+   .PaddingBottom {
+      padding-bottom: 70px;
+   }
 }
