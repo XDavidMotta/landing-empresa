@@ -78,6 +78,10 @@ a {
 }
 
 #Servicios {
+   padding: 200px;
+}
+
+#Proyectos {
    padding: 100px;
 }
 
@@ -151,13 +155,29 @@ h2 {
 }
 
 .PaddingBottom {
-   padding-bottom: 100px;
+   padding-bottom: 200px;
    max-width: 450px;
 }
 
 .TextoDerecha {
    justify-content: space-between;
    display: flex;
+}
+
+.TablaProyectos {
+   display: grid;
+   grid-template-columns: 2fr 1fr;
+   grid-auto-rows: 300px;
+}
+
+.Imagen1 {
+   grid-row: span 2;
+}
+
+.TablaProyectos img {
+   object-fit: cover;
+   width: 100%;
+   height: 100%;
 }
 
 @media (max-width: 768px) {
