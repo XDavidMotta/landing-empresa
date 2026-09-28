@@ -79,11 +79,9 @@ a {
    padding: 100px;
 }
 
-#Servicios {
-   padding: 200px;
-}
-
-#Proyectos {
+#Proyectos,
+#Servicios,
+#Comentarios {
    padding: 100px;
 }
 
@@ -144,10 +142,11 @@ h2 {
    max-width: 600px;
 }
 
-.TablaServicios {
+.TablaServicios,
+.TablaComentarios {
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
-   grid-gap: 1px 1px;
+   grid-gap: 1px;
    background-color: var(--color-letra);
 }
 
@@ -207,6 +206,34 @@ h2 {
    font-size: var(--Size-Foto4-Texto);
 }
 
+.contenedor .TituloComentarios {
+   display: flex;
+   align-items: center;
+   flex-flow: column;
+   margin-bottom: 200px;
+}
+
+.SubComentario::after {
+   content: "";
+   display: inline-block;
+   background-color: var(--Naranja);
+   margin-left: 10px;
+   width: 30px;
+   height: 1px;
+   vertical-align: 5px;
+}
+
+.ComentariosCabecera {
+   display: flex;
+   gap: 20px;
+   align-items: center;
+}
+
+.TarjetaComentarios {
+   background-color: var(--Fondo);
+   padding: 5px 35px;
+}
+
 @media (max-width: 768px) {
    h1 {
       font-size: var(--Size-H1-Movil);
@@ -218,7 +245,8 @@ h2 {
 
    #Hero,
    #Servicios,
-   #Proyectos {
+   #Proyectos,
+   #Comentarios {
       padding: 60px 20px;
    }
 
@@ -230,7 +258,8 @@ h2 {
       flex-direction: column;
    }
 
-   .TablaServicios {
+   .TablaServicios,
+   .TablaComentarios {
       grid-template-columns: 1fr;
    }
 
@@ -256,5 +285,14 @@ h2 {
       bottom: 5px;
       left: 5px;
       font-size: var(--Size-Fotos-Texto-Movil);
+   }
+
+   .contenedor .TituloComentarios {
+      margin-bottom: 100px;
+   }
+
+   .TarjetaComentarios {
+      padding-bottom: 30px;
+      padding-top: 30px;
    }
 }
