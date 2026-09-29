@@ -245,8 +245,61 @@
 
     <section id="Contacto">
         <div class="contenedor">
-            <p class="subtitulo">Contactanos!</p>
-            <h2>Más Información</h2>
+            <div class="TituloInfo">
+                <p class="subtitulo SubComentario">Contactanos!</p>
+                <h2>Hablemos de <br><span class="CambioLetra-Contacto">tu proyecto.</span></h2>
+            </div>
+            <div class="TablaContactos">
+                <div>
+                    <p class="InfoEmpresa">Teléfono</p>
+                    <p>+34 000 00 00 00</p>
+                    <br>
+                    <p class="InfoEmpresa">Email</p>
+                    <p>dixa.construcciones@gmail.com</p>
+                    <br>
+                    <p class="InfoEmpresa">Dirección</p>
+                    <p>C/ Lorem Ipsum sit amet</p>
+                    <br>
+                    <p class="InfoEmpresa">Horario</p>
+                    <p>Lorem Ipsum sit amet</p>
+                </div>
+                <div class="Formulario">
+                    <form action="POST">
+                        
+                        <label for="Nombre">NOMBRE</label>
+                        <div>
+                        <input type="text" name="Nombre" id="Nombre">
+                        </div>
+
+                        <label for="Email">EMAIL</label>
+                        <div>
+                        <input type="email" name="Email" id="Email">
+                        </div>
+                        
+                        <label for="Teléfono">TELÉFONO</label>
+                        <div>
+                        <input type="tel" name="Teléfono" id="Teléfono">
+                        </div>
+
+                        <label for="TypeProyect">TIPO DE PROYECTO</label>
+                        <div>
+                        <select name="TypeProyect" id="TypeProyect">
+                            <option value="">--Elige una opción--</option>
+                            <option value="Restaurante">Restaurante</option>
+                            <option value="Clinica">Clinica</option>
+                            <option value="Vivienda">Vivienda</option>
+                            <option value="Local">Local</option>
+                            <option value="Reforma Integral">Reforma Integral</option>
+                        </select>
+                        </div>
+
+                        <label for="Mensaje">MENSAJE</label>
+                        <div>
+                        <textarea name="Mensaje" id="Mensaje" placeholder="Cuéntanos sobre tu proyecto: ubicación, superficie, plazos estimados..." rows="20"></textarea>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
     </section>
 </body>

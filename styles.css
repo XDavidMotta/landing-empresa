@@ -58,9 +58,14 @@ a {
    color: var(--Texto-botones);
 }
 
-.CambioLetra-Logo,
-.CambioLetra-Nosotros {
+.CambioLetra-Logo {
    color: var(--Naranja);
+}
+
+.CambioLetra-Nosotros,
+.CambioLetra-Contacto {
+   color: var(--Naranja);
+   font-style: italic;
 }
 
 /*NO BORRAR .Nav .boton-presupuesto (da color a la letra del botón!)*/
@@ -281,6 +286,29 @@ h2 {
 
 .Imagen6 img {
    width: 100%;
+}
+
+.TituloInfo {
+   display: flex;
+   align-items: center;
+   flex-flow: column;
+}
+
+.TablaContactos {
+   display: grid;
+   grid-template-columns: 1fr 2fr;
+   padding-top: 100px;
+   gap: 300px;
+}
+
+.InfoEmpresa {
+   text-transform: uppercase;
+   color: var(--Naranja);
+}
+
+.Formulario {
+   display: grid;
+   grid-row: span 2;
 }
 
 @media (max-width: 768px) {
