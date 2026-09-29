@@ -1,6 +1,6 @@
 :root {
    --color-letra: #8a8680;
-   --Naranja: #E8622A;
+   --Naranja: rgb(232, 98, 42);
    --Texto-botones: #FFFFFF;
    --Bordes: #535251;
    --Titulo: #F0EDE8;
@@ -58,7 +58,8 @@ a {
    color: var(--Texto-botones);
 }
 
-.CambioLetra-Logo {
+.CambioLetra-Logo,
+.CambioLetra-Nosotros {
    color: var(--Naranja);
 }
 
@@ -79,11 +80,11 @@ a {
    padding: 100px;
 }
 
-#Servicios {
-   padding: 200px;
-}
-
-#Proyectos {
+#Proyectos,
+#Servicios,
+#Comentarios,
+#SobreNosotros,
+#Contacto {
    padding: 100px;
 }
 
@@ -144,10 +145,11 @@ h2 {
    max-width: 600px;
 }
 
-.TablaServicios {
+.TablaServicios,
+.TablaComentarios {
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
-   grid-gap: 1px 1px;
+   grid-gap: 1px;
    background-color: var(--color-letra);
 }
 
@@ -208,6 +210,79 @@ h2 {
    font-size: var(--Size-Foto4-Texto);
 }
 
+.contenedor .TituloComentarios {
+   display: flex;
+   align-items: center;
+   flex-flow: column;
+   margin-bottom: 200px;
+}
+
+.SubComentario::after {
+   content: "";
+   display: inline-block;
+   background-color: var(--Naranja);
+   margin-left: 10px;
+   width: 30px;
+   height: 1px;
+   vertical-align: 5px;
+}
+
+.ComentariosCabecera {
+   display: flex;
+   gap: 20px;
+   align-items: center;
+}
+
+.TarjetaComentarios {
+   background-color: var(--Fondo);
+   padding: 5px 35px;
+}
+
+.Nosotros {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 40px;
+}
+
+.TituloNosotros {
+   padding-top: 100px;
+}
+
+.CifrasDeConfianza2 {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   gap: 50px;
+   padding-top: 50px;
+}
+
+.CuadroDelante::before {
+   content: "";
+   display: inline-block;
+   background-color: var(--Naranja);
+   margin-right: 5px;
+   width: 5px;
+   height: 5px;
+   vertical-align: 3px;
+}
+
+.Imagen6 {
+   position: relative;
+}
+
+.TituloImagen6 {
+   position: absolute;
+   bottom: -30px;
+   right: -30px;
+   padding: 1px 20px;
+   background-color: rgba(233, 106, 52, 0.7);
+   font-size: var(--Size-Foto1-Texto);
+}
+
+.Imagen6 img {
+   width: 100%;
+}
+
 @media (max-width: 768px) {
    h1 {
       font-size: var(--Size-H1-Movil);
@@ -219,7 +294,10 @@ h2 {
 
    #Hero,
    #Servicios,
-   #Proyectos {
+   #Proyectos,
+   #Comentarios,
+   #SobreNosotros,
+   #Contacto {
       padding: 60px 20px;
    }
 
@@ -231,7 +309,9 @@ h2 {
       flex-direction: column;
    }
 
-   .TablaServicios {
+   .TablaServicios,
+   .TablaComentarios,
+   .Nosotros {
       grid-template-columns: 1fr;
    }
 
@@ -257,5 +337,28 @@ h2 {
       bottom: 5px;
       left: 5px;
       font-size: var(--Size-Fotos-Texto-Movil);
+   }
+
+   .contenedor .TituloComentarios {
+      margin-bottom: 100px;
+   }
+
+   .TarjetaComentarios {
+      padding-bottom: 30px;
+      padding-top: 30px;
+   }
+
+   .TituloImagen6 {
+      bottom: 0;
+      right: 0;
+      font-size: var(--Size-Fotos-Texto-Movil);
+   }
+
+   .TituloNosotros {
+      padding-top: 50px;
+   }
+
+   .CifrasDeConfianza2 {
+      justify-content: center;
    }
 }
