@@ -14,24 +14,26 @@
 </head>
 
 <body>
-    <nav class="contenedor">
-        <div class="Logo-texto">
-            <a href="#Hero">
-                <img src="https://placeholdit.com/50x50/dddddd/999999" alt="Logo-empresa">
-            </a>
-            <a href="#Hero"><span class="CambioLetra-Logo">JDM</span>Construcciones</a>
-        </div>
+    <header>
+        <nav class="contenedor">
+            <div class="Logo-texto">
+                <a href="#Hero">
+                    <img src="https://placeholdit.com/50x50/dddddd/999999" alt="Logo-empresa">
+                </a>
+                <a href="#Hero"><span class="CambioLetra-Logo">JDM</span>Construcciones</a>
+            </div>
 
-        <div class="Nav">
-            <a href="#Proyectos">Proyectos</a>
-            <a href="#Servicios">Servicios</a>
-            <a href="#Comentarios">Comentarios</a>
-            <a href="#SobreNosotros">Sobre Nosotros</a>
-            <a href="#Contacto">Contacto</a>
-            <a href="#Contacto" class="boton-presupuesto">Presupuesto</a>
-        </div>
-    </nav>
-
+            <div class="Nav">
+                <a href="#Proyectos">Proyectos</a>
+                <a href="#Servicios">Servicios</a>
+                <a href="#Comentarios">Comentarios</a>
+                <a href="#SobreNosotros">Sobre Nosotros</a>
+                <a href="#Contacto">Contacto</a>
+                <a href="#Contacto" class="boton-presupuesto">Presupuesto</a>
+            </div>
+            <button class="Hamburgesa">☰</button>
+        </nav>
+    </header>
 
     <section id="Hero">
         <div class="contenedor">
@@ -263,45 +265,76 @@
                     <p class="InfoEmpresa">Horario</p>
                     <p>Lorem Ipsum sit amet</p>
                 </div>
+
                 <div class="Formulario">
-                    <form action="POST">
-                        
-                        <label for="Nombre">NOMBRE</label>
-                        <div>
-                        <input type="text" name="Nombre" id="Nombre">
-                        </div>
-
-                        <label for="Email">EMAIL</label>
-                        <div>
-                        <input type="email" name="Email" id="Email">
-                        </div>
-                        
-                        <label for="Teléfono">TELÉFONO</label>
-                        <div>
-                        <input type="tel" name="Teléfono" id="Teléfono">
-                        </div>
-
-                        <label for="TypeProyect">TIPO DE PROYECTO</label>
-                        <div>
-                        <select name="TypeProyect" id="TypeProyect">
-                            <option value="">--Elige una opción--</option>
-                            <option value="Restaurante">Restaurante</option>
-                            <option value="Clinica">Clinica</option>
-                            <option value="Vivienda">Vivienda</option>
-                            <option value="Local">Local</option>
-                            <option value="Reforma Integral">Reforma Integral</option>
-                        </select>
-                        </div>
-
-                        <label for="Mensaje">MENSAJE</label>
-                        <div>
-                        <textarea name="Mensaje" id="Mensaje" placeholder="Cuéntanos sobre tu proyecto: ubicación, superficie, plazos estimados..." rows="20"></textarea>
+                    <form action="#" method="POST">
+                        <div class="TablaForm">
+                            <div>
+                                <label for="Nombre">NOMBRE</label>
+                                <div class="PaddingText">
+                                    <input required placeholder="Nombre Completo" class="TextNombre" type="text"
+                                        name="Nombre" id="Nombre">
+                                </div>
+                            </div>
+                            <div>
+                                <label for="Telefono">TELÉFONO</label>
+                                <div class="PaddingText">
+                                    <input required class="TextTel" type="tel" name="Telefono" id="Telefono"
+                                        placeholder="+34 600 00 00 00">
+                                </div>
+                            </div>
+                            <div class="Email">
+                                <label for="Email">EMAIL</label>
+                                <div class="PaddingText">
+                                    <input required placeholder="Tu@email.com" class="TextEmail" type="email"
+                                        name="Email" id="Email">
+                                </div>
+                            </div>
+                            <div class="Proyecto">
+                                <label for="TypeProyect">TIPO DE PROYECTO</label>
+                                <div class="PaddingText">
+                                    <select required class="TextSelect" name="TypeProyect" id="TypeProyect">
+                                        <option value="">--Elige una opción--</option>
+                                        <option value="Restaurante">Restaurante</option>
+                                        <option value="Clinica">Clinica</option>
+                                        <option value="Vivienda">Vivienda</option>
+                                        <option value="Local">Local</option>
+                                        <option value="Reforma Integral">Reforma Integral</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="Mensaje">
+                                <label for="Mensaje">MENSAJE</label>
+                                <div class="PaddingText">
+                                    <textarea class="TextArea" name="Mensaje" id="Mensaje"
+                                        placeholder="Cuéntanos sobre tu proyecto: ubicación, superficie, plazos estimados..."
+                                        rows="10"></textarea>
+                                </div>
+                            </div>
+                            <button class="Enviar" type="submit">Enviar Solicitud</button>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
     </section>
+    <footer>
+        <div class="contenedor">
+            <div class="TablaFooter">
+                <div class="LogoFooter">
+                    <img src="https://placeholdit.com/50x50/dddddd/999999" alt="Logo-empresa">
+                    <p><span class="CambioLetra-Logo">JDM</span>Construcciones</p>
+                </div>
+                <div>© 2026 JDM Construcciones Todos los derechos reservados</div>
+                <div class="EnlaceFooter">
+                    <p>Razón Social</p>
+                    <p>Nif/Cif</p>
+                    <a href="#">Privacidad</a>
+                    <a href="#">Aviso Legal</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
