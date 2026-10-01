@@ -496,6 +496,7 @@ h2 {
 
    .Nav {
       display: none;
+      position: absolute;
    }
    
    .Hamburgesa {
@@ -510,5 +511,16 @@ h2 {
 
    .Logo-texto {
       padding: 5px 20px
+   }
+
+   .Nav.MenuAbierto {
+      display: flex;
+      flex-flow: column;
+      top: 100%;
+      background-color: var(--Fondo);
+      left: 0;
+      width: 100%;
+      padding: 0;
+      padding-bottom: 20px;
    }
 }
