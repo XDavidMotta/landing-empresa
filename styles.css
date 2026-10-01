@@ -495,8 +495,18 @@ h2 {
    }
 
    .Nav {
-      display: none;
+      display: flex;
+      flex-flow: column;
       position: absolute;
+      opacity: 0;
+      visibility: hidden;
+      padding-bottom: 20px;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      padding: 0;
+      background-color: var(--Fondo);
+      transition: opacity 0.3s, visibility 0.3s;
    }
    
    .Hamburgesa {
@@ -522,5 +532,7 @@ h2 {
       width: 100%;
       padding: 0;
       padding-bottom: 20px;
+      visibility: visible;
+      opacity: 100;
    }
 }
