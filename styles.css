@@ -356,6 +356,7 @@ h2 {
    padding: 15px;
    cursor: pointer;
 }
+
 .PaddingText {
    padding-top: 10px;
 }
@@ -388,7 +389,30 @@ h2 {
    color: var(--color-letra);
 }
 
-.Hamburgesa {
+.Hamburguesa {
+   display: none;
+}
+
+.btnDataTypePadre {
+   display: flex;
+}
+
+.btnDataType {
+   width: 100%;
+   background-color: var(--Fondo);
+   color: var(--Texto-botones);
+   border: var(--Bordes);
+   box-sizing: border-box;
+   padding: 15px;
+   cursor: pointer;
+   margin: 50px 0px;
+}
+
+.btnDataType:hover {
+   background-color: var(--Naranja);
+}
+
+.btnJS {
    display: none;
 }
 
@@ -399,9 +423,9 @@ h2 {
    }
 
    .TituloImagen6 {
-   position: absolute;
-   bottom: -20px;
-   right: -10px;
+      position: absolute;
+      bottom: -20px;
+      right: -10px;
    }
 }
 
@@ -500,16 +524,16 @@ h2 {
       position: absolute;
       opacity: 0;
       visibility: hidden;
-      padding-bottom: 20px;
       top: 100%;
       left: 0;
       width: 100%;
       padding: 0;
       background-color: var(--Fondo);
       transition: opacity 0.3s, visibility 0.3s;
+      padding-bottom: 20px;
    }
-   
-   .Hamburgesa {
+
+   .Hamburguesa {
       display: flex;
       border: none;
       background: none;
@@ -524,15 +548,7 @@ h2 {
    }
 
    .Nav.MenuAbierto {
-      display: flex;
-      flex-flow: column;
-      top: 100%;
-      background-color: var(--Fondo);
-      left: 0;
-      width: 100%;
-      padding: 0;
-      padding-bottom: 20px;
       visibility: visible;
-      opacity: 100;
+      opacity: 1;
    }
 }
