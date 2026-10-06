@@ -5,18 +5,18 @@ btnMenu.addEventListener("click", function () {
 });
 
 const listTargetas = document.querySelectorAll(".Foto");
-console.log(listTargetas);
 const listBtn = document.querySelectorAll(".btnDataType");
-console.log(listBtn);
 listBtn.forEach(boton => {
     boton.addEventListener("click", function () {
-        console.log(boton.dataset.type);
+        listBtn.forEach(cadaBoton => {
+            cadaBoton.classList.remove("permaNaranja");
+        });
+        boton.classList.add("permaNaranja");
         listTargetas.forEach(tarjeta => {
-            console.log(tarjeta.dataset.type)
             if (boton.dataset.type === tarjeta.dataset.type || boton.dataset.type === "") {
-                tarjeta.classList.remove("btnJS")
+                tarjeta.classList.remove("btnJS");
             } else {
-                tarjeta.classList.add("btnJS")
+                tarjeta.classList.add("btnJS");
             }
         });
     });

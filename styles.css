@@ -412,6 +412,10 @@ h2 {
    background-color: var(--Naranja);
 }
 
+.permaNaranja.btnDataType {
+   background-color: var(--Naranja);
+}
+
 .btnJS {
    display: none;
 }
