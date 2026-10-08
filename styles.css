@@ -88,7 +88,7 @@ a {
 }
 
 #Hero {
-   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://fastly.picsum.photos/id/22/4434/3729.jpg?hmac=fjZdkSMZJNFgsoDh8Qo5zdA_nSGUAWvKLyyqmEt2xs0);
+   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://placeholdit.com/1600x1600/dddddd/999999);
    background-size: cover;
    background-position: center;
    padding: 100px;
